@@ -1,0 +1,14 @@
+com\noxstudy\persistent\entity\UserEntity.class
+com\noxstudy\persistent\entity\BaseTimestampEntity.class
+com\noxstudy\persistent\repository\AbstractGenericDao.class
+com\noxstudy\persistent\repository\UserRepository.class
+com\noxstudy\persistent\entity\BaseTimestampEntity_.class
+com\noxstudy\persistent\entity\DocumentEntity_.class
+com\noxstudy\persistent\repository\impl\DocumentRepositoryImpl.class
+com\noxstudy\persistent\entity\Authority.class
+com\noxstudy\persistent\repository\GenericDao.class
+com\noxstudy\persistent\repository\impl\UserRepositoryImpl.class
+com\noxstudy\persistent\entity\Authority_.class
+com\noxstudy\persistent\entity\UserEntity_.class
+com\noxstudy\persistent\entity\DocumentEntity.class
+com\noxstudy\persistent\repository\DocumentRepository.class

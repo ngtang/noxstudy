@@ -1,0 +1,31 @@
+version: '3'
+
+services:
+  back-end-app:
+    container_name: nox-study-rest
+    build:
+      context: .
+      dockerfile: Dockerfile
+    restart: always
+    depends_on:
+      - postgres-db
+    ports:
+      - 80:8080
+      - 8787:8787
+
+  postgres-db:
+    image: postgres:9.6.10
+    container_name: postgres_container
+    environment:
+      POSTGRES_DB: ${POSTGRES_DB}
+      POSTGRES_USER: ${POSTGRES_USER}
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD}
+      PGDATA: /data/postgres
+    volumes:
+      - postgres-volume:/data/postgres
+    ports:
+      - "5432:5432"
+    restart: always
+
+volumes:
+  postgres-volume:
