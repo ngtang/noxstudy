@@ -14,7 +14,7 @@ psql -U postgres -W nox-study
 ```
 
 ## Usage
-- Run the class CodeTutorApplication
+- Run the class NoxStudyApplication
 - Check the api to make sure the back-end works well
     - http://localhost:8080/api/no-auth/health-check
 
