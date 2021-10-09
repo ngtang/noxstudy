@@ -28,11 +28,11 @@ import com.noxstudy.common.constant.Constants;
         @PropertySource("classpath:persistent.properties"),
         @PropertySource("classpath:document.properties")
 })
-public class CodeTutorApplication
+public class NoxStudyApplication
 {
     public static void main(String[] args)
     {
-        SpringApplication.run(CodeTutorApplication.class, args);
+        SpringApplication.run(NoxStudyApplication.class, args);
     }
 }
 
