@@ -10,7 +10,7 @@ import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 
-//import com.noxstudy.authentication.models.Credential;
+import com.noxstudy.authentication.models.Credential;
 import com.noxstudy.persistent.entity.UserEntity;
 import com.noxstudy.rest.factory.jwt.TokenHelper;
 
@@ -34,7 +34,7 @@ public class AuthenticationRestService
 
         final String token = tokenHelper.generateToken(user.getUsername());
 
-        com.noxstudy.authentication.models.Authentication response = new com.vn.green.authentication.models.Authentication();
+        com.noxstudy.authentication.models.Authentication response = new com.noxstudy.authentication.models.Authentication();
         response.setToken(token);
         response.setExpiredIn(tokenHelper.getExpiresIn());
         return ResponseEntity.ok(response);
