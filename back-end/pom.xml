@@ -25,6 +25,7 @@
 		<module>ns-liquibase</module>
 		<module>ns-document</module>
 		<module>ns-common</module>
+		<module>ns-validation</module>
 	</modules>
 
 	<properties>
