@@ -24,7 +24,7 @@ public class AuthenticationRestService
     private TokenHelper tokenHelper;
 
     @PostMapping(value = "/authenticate")
-    public ResponseEntity<com.vn.green.authentication.models.Authentication> authenticate(@RequestBody Credential credential)
+    public ResponseEntity<com.noxstudy.authentication.models.Authentication> authenticate(@RequestBody Credential credential)
     {
         Authentication authentication = authenticationManager.authenticate(new UsernamePasswordAuthenticationToken(credential.getUsername(), credential.getPassword()));
 
@@ -34,7 +34,7 @@ public class AuthenticationRestService
 
         final String token = tokenHelper.generateToken(user.getUsername());
 
-        com.vn.green.authentication.models.Authentication response = new com.vn.green.authentication.models.Authentication();
+        com.noxstudy.authentication.models.Authentication response = new com.vn.green.authentication.models.Authentication();
         response.setToken(token);
         response.setExpiredIn(tokenHelper.getExpiresIn());
         return ResponseEntity.ok(response);
