@@ -20,7 +20,7 @@ import com.noxstudy.persistent.entity.DocumentEntity;
 
 @Controller
 @RequestMapping("document")
-public class DocumentRestService {
+public class DocumentRestController {
 
     @Autowired
     private DocumentService documentService;

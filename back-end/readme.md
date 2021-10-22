@@ -8,10 +8,18 @@ https://app.diagrams.net/?libs=general;uml#G12-2A2GoSeEhGe6eZasPhUrWICUWk2bql
 ```bash
 docker-compose -f .\docker-compose.postgres.yml up -d
 ```
-- Open CLI in Docker-Desktop to access database and see if it works with this syntax: psql -U <user-name> -W <database-name>
+- Open **CLI** of **postgres_container** in Docker-Desktop to access database and see if it works with this syntax: psql -U <user-name> -W <database-name>
 ```
 psql -U postgres -W nox-study
 ```
+For Mac issue:
+vi .bash_profile
+Press i
+Add: export PATH=/Library/PostgreSQL/9.6.10/bin:$PATH
+esc -> :wq to save
+
+For pgadmin connect:
+docker inspect container_id -> Get ipv4 to host field
 
 ## Usage
 - Run the class NoxStudyApplication

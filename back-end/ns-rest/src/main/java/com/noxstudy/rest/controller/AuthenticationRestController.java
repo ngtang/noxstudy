@@ -15,7 +15,7 @@ import com.noxstudy.persistent.entity.UserEntity;
 import com.noxstudy.rest.factory.jwt.TokenHelper;
 
 @Controller
-public class AuthenticationRestService
+public class AuthenticationRestController
 {
     @Autowired
     private AuthenticationManager authenticationManager;

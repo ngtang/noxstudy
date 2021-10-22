@@ -21,7 +21,7 @@ import com.noxstudy.core.model.User;
 
 @Controller
 @RequestMapping(value = "user")
-public class UserRestService
+public class UserRestController
 {
     @Autowired
     private UserService userService;
