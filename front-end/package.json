@@ -9,7 +9,8 @@
   "dependencies": {
     "bootstrap": "^4.6.0",
     "bootstrap-vertical-tabs": "^1.2.2",
-    "jquery": "^3.6.0"
+    "jquery": "^3.6.0",
+    "node": "^17.0.1"
   },
   "devDependencies": {
     "@angular-devkit/build-angular": "^13.0.1",
